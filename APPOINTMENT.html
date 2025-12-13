@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Doctor Appointment</title>
+  <!-- <link rel="stylesheet" href="appointment.css" /> -->
+</head>
+<style>
+   nav {
+            background-color: rgb(25, 17, 95);
+
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 10px 20px;
+            list-style: none;
+            padding: 2px;
+            font-size: larger;
+            text-align: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color:rgba(217, 211, 23, 0.885) ;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: rgb(168, 159, 159);
+        }
+
+        .line {
+            width: 33px;
+            background-color: rgba(217, 211, 23, 0.885);
+            height: 4px;
+            margin: 3px 3px;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        div h {
+            margin: 20px 10px;
+            font-size: larger;
+            padding: 1%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+        option {
+            color: black;
+        }
+
+        div button {
+            background-color: rgba(217, 211, 23, 0.885);
+            display: inline;
+            font-size: larger;
+            border: none;
+            padding: 1ch;
+        }
+
+        .content1 {
+            margin-top: 2%;
+            background-color: rgba(217, 211, 23, 0.885);
+            padding: 20px;
+        }
+
+        .content1 h {
+            font-size: larger;
+            color:rgb(25, 17, 95) ;
+            font-size: x-large;
+        }
+
+        .content1 select {
+            padding: 1cap;
+           
+        }
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, sans-serif; */
+  background-color: #f2f2f2;
+  /* padding: 40px; */
+}
+
+.container {
+  background-color: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-top: 2%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"],
+#doctor {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  margin-top: 25px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.confirmation {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+  .footer {
+    background-color:rgb(118, 117, 117); /* Light gray background */
+    color: white; /* Dark text */
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.1);
+    margin-top: 2%;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .contact-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+  }
+
+  .contact-info p {
+    margin: 6px 0;
+    font-size: 16px;
+  }
+
+  .contact-info hr {
+    margin: 25px 0;
+    border: none;
+    border-top: 2px solid white;
+  }
+
+  .system {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .footer-column {
+    min-width: 180px;
+  }
+
+  .footer-column h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+
+  .footer-column p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .footer-column p:hover {
+    color: #0f1216;
+    transform: translateX(5px);
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: white;
+    border-top: 1px solid white;
+    padding-top: 15px;
+    font-style: italic;
+  }
+</style>
+<body>
+   <!-- HEADER -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="diatchart.html">Dietchart</a></li>
+                <li><a href="pediatrics.html">Pediatrics</a></li>
+                <li><a href="h.htm">Medicine</a></li>
+                <!-- <li><a href="">Contact us</a></li> -->
+                <!-- <li><a href=""><ion-icon name="call-outline"></ion-icon>
+                    <h>503-221-0161</h>
+                </a></li> -->
+                <nav>
+                    <li><a href="login.html"><ion-icon name="search-outline"></ion-icon>
+                            <h>MyChart login</h>
+                        </a></li>
+                </nav>
+            </ul>
+        </nav>
+   
+    <div class="Style">
+        <h><a href="doctor.html">Doctors</a></h>
+        <h><a href="SPECIALTIES.html">Specialties</a></h>
+        <!-- <h>Locations</h> -->
+        <!-- <h>Resources</h> -->
+        <h> <a href="HEALTHBLOG.html">Health Blog</a></h>
+                <button><a href="APPOINTMENT.html">Book an appointment</a></button>
+
+    </div>
+    <div class="content1">
+        <h>Find a Doctor<h>
+                <select name="links" id="" size="1" onchange="window.location.href=this.value">
+                    <option value="">Type a specialty</option>
+                    <!-- <option value="">Ambulatory Surgical Center</option> -->
+                    <option value="Anesthesiology.html">Anesthesiology</option>
+                    <option value="Dentist.html">Dentist</option>
+                    <option value="Ophthalmologists.html">Ophthalmologists</option>
+                    <option value="Audiology.html">Audiology</option>
+                    <option value="Pulmonologist.html">Pulmonologist</option>
+                    <!-- <option value="">Clinical Pharmacy</option> -->
+                    <option value="dermitology.html">Dermatology</option>
+                    <!-- <option value="">Diabetes Services</option> -->
+                    <!-- <option value="">Family Medicine</option> -->
+                    <!-- <option value="">Foot and Ankle</option> -->
+                    <option value="Gastroenterologist.html">Gastroenterology</option>
+                    <!-- <option value="">General Surgery</option> -->
+                    <option value="gyno.html">Gynecology</option>
+                    <!-- <option value="">Infection Disease Medicine</option> -->
+                    <option value="Urologist.html">Urologist</option>
+                    <option value="neurology.html">Neurology</option>
+                    <option value=" Nutrition.html">Nutrition</option>
+                    <option value="Orthopedics .html">Orthopedics $ Sports Medicine</option>
+                    <option value="Physical Therapy.html">Physical Therapy</option>
+                    <!-- <option value="">Primary care</option> -->
+                    <!-- <option value="">Pediatrics</option> -->
+                </select>
+                <select name="links" id="" size="1" onchange="window.location.href=this.value">
+
+                    <option value="">Select a location</option>
+                    <option value="https://www.google.com/maps/place/Rajendra+Nagar,+Satna">Rajendra Nagar</option>
+                    <option value="https://www.google.com/maps/place/Bharhut+Nagar,+Satna">Bharhut Nagar</option>
+                    <option value="https://www.google.com/maps/place/Sangram+Colony,+Satna">sangram colony</option>
+                    <option value="https://www.google.com/maps/place/Amrit+Vatika,+Satna"> Amrit Vatika</option>
+                    <option value="https://www.google.com/maps/place/Semaria+Chowk,+Satna">Semaria Chowk</option>
+                    <option value="https://www.google.com/maps/place/Birla+Road,+Satna">Birla Road</option>
+                    <option value="">Birla Road</option>
+                </select>
+                <select name="links" id="" size="1" onchange="window.location.href=this.value">
+                    <option value="">Type first or last name</option>
+                    <option value="dr1.html">Puneet,Agrawal </option>
+                    <option value="dr2.html">Alok,Jain</option>
+                    <option value="dr3.html">Deepak,Kanojiya</option>
+                    <option value="dr4.html">Vakeel,Singh</option>
+                    <option value="dr5.html">Akriti,Gupta</option>
+                    <option value="dr6.html">Pushpendra,Singh</option>
+                    <option value="dr7.html">Abhishek,Singh</option>
+                    <option value="dr8.html">Mukesh,Tripathi</option>
+                    <option value="dr9.html">Jyoti,Jaiswal</option>
+                </select>
+    </div>
+    </header>
+  <div class="container">
+    <h1>Book an Appointment</h1>
+    <form id="appointmentForm" method="POST" action="Appointment.php">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+      <label for="doctor">Select Doctor</label>
+      <select id="doctor" name="doctor" required>
+        <option value="">--Select Doctor--</option>
+        <option value="Puneet Agrawal">Puneet Agrawal</option>
+        <option value="Alok Jain">Alok Jain</option>
+        <option value="Deepak Kanojiya">Deepak Kanojiya</option>
+        <option value="Vakeel Singh">Vakeel Singh</option>
+        <option value="Akriti Gupta">Akriti Gupta</option>
+        <option value="Pushpendra Singh">Pushpendra Singh</option>
+        <option value="Abhishek Singh">Abhishek Singh</option>
+        <option value="Mukesh Tripathi">Mukesh Tripathi</option>
+        <option value="Jyoti Jaiswal">Jyoti Jaiswal</option>
+      </select>
+
+      <label for="datetime">Appointment Date & Time</label>
+      <input type="datetime-local" id="datetime" name="datetime" required>
+
+      <input type="submit" value="Book Appointment">
+    </form>
+
+    <div class="confirmation" id="confirmation"></div>
+  </div>
+  <div class="footer">
+        <div class="footer-container">
+            <div class="contact-info">
+                <h2>Contact us</h2>
+                <p>Online</p>
+                <p>Phone: 503-221-0161</p>
+                <hr>
+            </div>
+
+            <div class="system">
+                <div class="footer-column">
+                    <h3>Patient info</h3>
+                    <p>Doctors</p>
+                    <p>Specialties</p>
+                    <p>Patient resources</p>
+                    <p>Notice of privacy practices</p>
+                    <!-- <p>SMS Terms and Conditions</p> -->
+                    <p>Health matters</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>General clinic info</h3>
+                    <p>About us</p>
+                    <p>Careers</p>
+                    <!-- <p>The Portland Clinic Foundation</p> -->
+                    <!-- <p>100% Portland for 100 years</p> -->
+                </div>
+
+                <div class="footer-column">
+                    <h3>Partner sites</h3>
+                    <p>MyChart link</p>
+                    <p>EpicCare link</p>
+                    <p>Media resources</p>
+                </div>
+
+                <div class="footer-column">
+                    <!-- <h3>TPC staff & providers</h3> -->
+                    <p>External TPC email access</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2024 The Smart Health Care
+            </div>
+        </div>
+    </div>
+<!-- <script>
+    document.getElementById("appointmentForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const doctor = document.getElementById("doctor").value;
+      const datetime = new Date(document.getElementById("datetime").value);
+
+      document.getElementById("confirmation").innerText =
+        `✅ Appointment booked with Dr. ${doctor} on ${datetime.toLocaleString()}. Thank you, ${name}!`;
+
+      this.reset();
+    });
+  </script> -->
+</body>
+</html>

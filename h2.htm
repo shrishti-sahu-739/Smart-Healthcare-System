@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image with Vertical Text</title>
+    <style>
+        nav {
+            background-color: rgb(25, 17, 95);
+
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 10px 20px;
+            list-style: none;
+            padding: 2px;
+            font-size: larger;
+            text-align: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgba(217, 211, 23, 0.885);
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: rgb(168, 159, 159);
+        }
+
+        .line {
+            width: 33px;
+            background-color: rgba(217, 211, 23, 0.885);
+            height: 4px;
+            margin: 3px 3px;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        div h {
+            margin: 20px 10px;
+            font-size: larger;
+            padding: 1%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        option {
+            color: black;
+        }
+
+        div button {
+            background-color: rgba(217, 211, 23, 0.885);
+            display: inline;
+            font-size: larger;
+            border: none;
+            padding: 1ch;
+        }
+
+        .content {
+            margin-top: 2%;
+            background-color: rgba(217, 211, 23, 0.885);
+            padding: 20px;
+        }
+
+        .content h {
+            font-size: larger;
+            color: rgb(25, 17, 95);
+            font-size: x-large;
+        }
+
+        .content select {
+            padding: 1cap;
+        }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container3 {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.container3 img {
+  width: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.content3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content3 p {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="diatchart.html">Dietchart</a></li>
+                <li><a href="pediatrics.html">Pediatrics</a></li>
+                <!-- <li><a href="">For providers</a></li> -->
+                <!-- <li><a href="">Contact us</a></li> -->
+                <!-- <li><a href=""><ion-icon name="call-outline"></ion-icon>
+                    <h>503-221-0161</h>
+                </a></li> -->
+                <nav>
+                    <li><a href="login.html"><ion-icon name="search-outline"></ion-icon>
+                            <h>MyChart login</h>
+                        </a></li>
+                </nav>
+            </ul>
+        </nav>
+    </header>
+    <div class="Style">
+        <h><a href="doctor.html">Doctors</a></h>
+        <h><a href="SPECIALTIES.html">Specialties</a></h>
+        <!-- <h>Locations</h> -->
+        <!-- <h>Resources</h> -->
+        <h> <a href="HEALTHBLOG.html">Health Blog</a></h>
+        <button>Book an appointment</button>
+    </div>
+    <div class="content">
+        <h>Find a Doctor<h>
+                <select name="links" id="" size="1" onchange="window.location.href=this.value">
+                    <option value="">Type a specialty</option>
+                    <!-- <option value="">Ambulatory Surgical Center</option> -->
+                    <option value="Anesthesiology.html">Anesthesiology</option>
+                    <option value="Dentist.html">Dentist</option>
+                    <option value="Ophthalmologists.html">Ophthalmologists</option>
+                    <option value="Audiology.html">Audiology</option>
+                    <option value="Pulmonologist.html">Pulmonologist</option>
+                    <!-- <option value="">Clinical Pharmacy</option> -->
+                    <option value="dermitology.html">Dermatology</option>
+                    <!-- <option value="">Diabetes Services</option> -->
+                    <!-- <option value="">Family Medicine</option> -->
+                    <!-- <option value="">Foot and Ankle</option> -->
+                    <option value="Gastroenterologist.html">Gastroenterology</option>
+                    <!-- <option value="">General Surgery</option> -->
+                    <option value="gyno.html">Gynecology</option>
+                    <!-- <option value="">Infection Disease Medicine</option> -->
+                    <option value="Urologist.html">Urologist</option>
+                    <option value="neurology.html">Neurology</option>
+                    <option value=" Nutrition.html">Nutrition</option>
+                    <option value="Orthopedics .html">Orthopedics $ Sports Medicine</option>
+                    <option value="Physical Therapy.html">Physical Therapy</option>
+                    <!-- <option value="">Primary care</option> -->
+                    <!-- <option value="">Pediatrics</option> -->
+                </select>
+                <select name="links" id="" size="1" onchange="window.location.href=this.value">
+
+                    <option value="">Select a location</option>
+                    <option value="">Rajendra Nagar</option>
+                    <option value="">Bharhut Nagar</option>
+                    <option value="">sangram colony</option>
+                    <option value=""> Amrit Vatika</option>
+                    <option value="">Semaria Chowk</option>
+                    <option value="">Birla Road</option>
+                </select>
+                <select name="links" id="" size="1" onchange="window.location.href=this.value">
+                    <option value="">Type first or last name</option>
+                    <option value="dr1.html">Puneet,Agrawal </option>
+                    <option value="dr2.html">Alok,Jain</option>
+                    <option value="dr3.html">Deepak,Kanojiya</option>
+                    <option value="dr4.html">Vakeel,Singh</option>
+                    <option value="dr5.html">Akriti,Gupta</option>
+                    <option value="dr6.html">Pushpendra,Singh</option>
+                    <option value="dr7.html">Abhishek,Singh</option>
+                    <option value="dr8.html">Mukesh,Tripathi</option>
+                    <option value="dr9.html">Jyoti,Jaiswal</option>
+                </select>
+    </div>
+    <div class="container3">
+        <img src="img1.jpg" alt="Example Image">
+        <div class="content3">
+            <p>Dr. Puneet Agrawal</p>
+            <p><a href="dermitology.html">Specialist : Dermatologist</a></p>
+            <p>23 years in Healthcare</p>
+            <p>Consultation Fee : 300 rs</p>
+            <p>Available Now : until 8:00pm</p>
+            <p>Qualification : Diploma (Dermatology) - College Of <br> Physicians And Surg MBBS-MGM Institute Of Health
+                <br>Science , Bombay-1998
+            </p>
+            <P>Address : Rewa Road, Bharhut Nagar Tiraha, Satna</P>
+        </div>
+    </div>

@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(25, 17, 95);
+
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 10px 20px;
+    list-style: none;
+    padding: 2px;
+    font-size: larger;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(217, 211, 23, 0.885);
+    /* color: a; */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(168, 159, 159);
+}
+
+.line {
+    width: 33px;
+    background-color: rgba(217, 211, 23, 0.885);
+    height: 4px;
+    margin: 3px 3px;
+}
+
+div {
+    text-align: center;
+}
+
+div h {
+    margin: 20px 10px;
+    font-size: larger;
+    padding: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+option {
+    color: black;
+}
+
+div button {
+    background-color: rgba(217, 211, 23, 0.885);
+    display: inline;
+    font-size: larger;
+    border: none;
+    padding: 1ch;
+}
+
+.content {
+    margin-top: 2%;
+    background-color: rgba(217, 211, 23, 0.885);
+    padding: 20px;
+}
+
+.content h {
+    font-size: larger;
+    color: rgb(25, 17, 95);
+    font-size: x-large;
+}
+
+.content select {
+    padding: 1cap;
+}
+
+
+.title {
+    text-align: center;
+    width: 100%;
+    padding: 40px 0;
+    /* More vertical space for better appearance */
+    margin: 0;
+    font-size: 28px;
+    /* Optional: Improve readability */
+    font-weight: bold;
+    /* Optional: Emphasize the title */
+    color: rgba(217, 211, 23, 0.885);
+    background-color: rgb(25, 17, 95);
+}
+
+
+
+
+.medicine-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.medicine-card {
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.medicine-card:hover {
+    transform: translateY(-5px);
+}
+
+.medicine-card h2 {
+    color: #2980b9;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.medicine-card p {
+    color: #555;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: rgb(118, 117, 117);
+    /* Light gray background */
+    color: white;
+    margin-top: 5%;
+    /* Dark text */
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.contact-info p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+.contact-info hr {
+    margin: 25px 0;
+    border: none;
+    border-top: 2px solid white;
+}
+
+.system {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.footer-column {
+    min-width: 180px;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-column p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-column p:hover {
+    color: #0f1216;
+    transform: translateX(5px);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: white;
+    border-top: 1px solid white;
+    padding-top: 15px;
+    font-style: italic;
+}

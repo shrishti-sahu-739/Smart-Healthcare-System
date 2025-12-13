@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         nav {
+            background-color: rgb(25, 17, 95);
+
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 10px 20px;
+            list-style: none;
+            padding: 2px;
+            font-size: larger;
+            text-align: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color:rgba(217, 211, 23, 0.885) ;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: rgb(168, 159, 159);
+        }
+
+        .line {
+            width: 33px;
+            background-color: rgba(217, 211, 23, 0.885);
+            height: 4px;
+            margin: 3px 3px;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        div h {
+            margin: 20px 10px;
+            font-size: larger;
+            padding: 1%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        option {
+            color: black;
+        }
+
+        div button {
+            background-color: rgba(217, 211, 23, 0.885);
+            display: inline;
+            font-size: larger;
+            border: none;
+            padding: 1ch;
+        }
+
+        .content {
+            margin-top: 2%;
+            background-color: rgba(217, 211, 23, 0.885);
+            padding: 20px;
+        }
+
+        .content h {
+            font-size: larger;
+            color:rgb(25, 17, 95) ;
+            font-size: x-large;
+        }
+
+        .content select {
+            padding: 1cap;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container1 {
+            border: 2px solid black;
+            height: 150px;
+            width: 200;
+            background-color: rgb(22, 15, 102);
+
+            /* background-image: url("https://tse4.mm.bing.net/th?id=OIP.kO7SzXFQmA1NIgEh12nvcwHaFP&pid=Api&P=0&h=180"); */
+        }
+
+        .container1 h1 {
+            color: rgba(217, 211, 23, 0.885);
+            text-align: center;
+            padding-top: 3%;
+        }
+
+        .content1 p {
+            text-align: center;
+            font-size: larger;
+            color: gray;
+            letter-spacing: 0.03125rem;
+            margin-top: 3%;
+        }
+
+        .second {
+            border: 2px;
+            height: 250px;
+            width: 500;
+            margin-top: 3%;
+            background-color: rgb(241, 237, 237);
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 4%;
+            text-align: center;
+
+        }
+
+        .second div {
+            height: 200px;
+            width: 350px;
+            background-color: rgb(25, 17, 95);
+        }
+        header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+          .footer {
+    background-color:rgb(118, 117, 117); /* Light gray background */
+    color: white; /* Dark text */
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.1);
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .contact-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+  }
+
+  .contact-info p {
+    margin: 6px 0;
+    font-size: 16px;
+  }
+
+  .contact-info hr {
+    margin: 25px 0;
+    border: none;
+    border-top: 2px solid white;
+  }
+
+  .system {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .footer-column {
+    min-width: 180px;
+  }
+
+  .footer-column h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+
+  .footer-column p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .footer-column p:hover {
+    color: #0f1216;
+    transform: translateX(5px);
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: white;
+    border-top: 1px solid white;
+    padding-top: 15px;
+    font-style: italic;
+  }
+    </style>
+</head>
+
+<body>
+   <!-- HEADER -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="diatchart.html">Dietchart</a></li>
+                <li><a href="pediatrics.html">Pediatrics</a></li>
+                <li><a href="h.htm">Medicine</a></li>
+                <!-- <li><a href="">Contact us</a></li> -->
+                <!-- <li><a href=""><ion-icon name="call-outline"></ion-icon>
+                    <h>503-221-0161</h>
+                </a></li> -->
+                <nav>
+                    <li><a href="login.html"><ion-icon name="search-outline"></ion-icon>
+                            <h>MyChart login</h>
+                        </a></li>
+                </nav>
+            </ul>
+        </nav>
+    
+    <div class="Style">
+        <h><a href="doctor.html">Doctors</a></h>
+        <h><a href="SPECIALTIES.html">Specialties</a></h>
+        <!-- <h>Locations</h> -->
+        <!-- <h>Resources</h> -->
+        <h> <a href="HEALTHBLOG.html">Health Blog</a></h>
+               <button><a href="APPOINTMENT.html">Book an appointment</a></button>
+
+    </div>
+    <div class="content">
+        <h>Find a Doctor<h>
+                <select name="links" id="" size="1" onchange="window.location.href=this.value">
+                    <option value="">Type a specialty</option>
+                    <!-- <option value="">Ambulatory Surgical Center</option> -->
+                    <option value="Anesthesiology.html">Anesthesiology</option>
+                    <option value="Dentist.html">Dentist</option>
+                    <option value="Ophthalmologists.html">Ophthalmologists</option>
+                    <option value="Audiology.html">Audiology</option>
+                    <option value="Pulmonologist.html">Pulmonologist</option>
+                    <!-- <option value="">Clinical Pharmacy</option> -->
+                    <option value="dermitology.html">Dermatology</option>
+                    <!-- <option value="">Diabetes Services</option> -->
+                    <!-- <option value="">Family Medicine</option> -->
+                    <!-- <option value="">Foot and Ankle</option> -->
+                    <option value="Gastroenterologist.html">Gastroenterology</option>
+                    <!-- <option value="">General Surgery</option> -->
+                    <option value="gyno.html">Gynecology</option>
+                    <!-- <option value="">Infection Disease Medicine</option> -->
+                    <option value="Urologist.html">Urologist</option>
+                    <option value="neurology.html">Neurology</option>
+                    <option value=" Nutrition.html">Nutrition</option>
+                    <option value="Orthopedics .html">Orthopedics $ Sports Medicine</option>
+                    <option value="Physical Therapy.html">Physical Therapy</option>
+                    <!-- <option value="">Primary care</option> -->
+                    <!-- <option value="">Pediatrics</option> -->
+                </select>
+                <select name="links" id="" size="1" onchange="window.location.href=this.value">
+
+                    <option value="">Select a location</option>
+                     <option value="https://www.google.com/maps/place/Rajendra+Nagar,+Satna">Rajendra Nagar</option>
+                    <option value="https://www.google.com/maps/place/Bharhut+Nagar,+Satna">Bharhut Nagar</option>
+                    <option value="https://www.google.com/maps/place/Sangram+Colony,+Satna">sangram colony</option>
+                    <option value="https://www.google.com/maps/place/Amrit+Vatika,+Satna"> Amrit Vatika</option>
+                    <option value="https://www.google.com/maps/place/Semaria+Chowk,+Satna">Semaria Chowk</option>
+                    <option value="https://www.google.com/maps/place/Birla+Road,+Satna">Birla Road</option>
+                    <option value="">Birla Road</option>
+                </select>
+                <select name="links" id="" size="1" onchange="window.location.href=this.value">
+                    <option value="">Type first or last name</option>
+                    <option value="dr1.html">Puneet,Agrawal </option>
+                    <option value="dr2.html">Alok,Jain</option>
+                    <option value="dr3.html">Deepak,Kanojiya</option>
+                    <option value="dr4.html">Vakeel,Singh</option>
+                    <option value="dr5.html">Akriti,Gupta</option>
+                    <option value="dr6.html">Pushpendra,Singh</option>
+                    <option value="dr7.html">Abhishek,Singh</option>
+                    <option value="dr8.html">Mukesh,Tripathi</option>
+                    <option value="dr9.html">Jyoti,Jaiswal</option>
+                </select>
+    </div>
+    </header>
+
+    <div class="container1">
+        <h1>About Dermatology </h1>
+
+    </div>
+    <div class="content1">
+      <p>A dermatopathologist is a pathologist or dermatologist who specializes in the pathology <br>of the skin. This field is shared by dermatologists and pathologists. Usually,  a dermatologist <br>or pathologist completes one year of dermatopathology fellowship and according to market <br>projections, it is estimated to expand at a compound annual growth rate (CAGR) of 11.4% from <br>2022 to 2030. This usually includes six months of general pathology and six months of <br> dermatopathology. Alumni of both specialties can qualify as dermatopathologists. At the <br>completion of a standard residency in dermatology, many dermatologists are also competent at <br>dermatopathology. Some dermatopathologists qualify to sit for their examinations by completing a <br>residency in dermatology and one in pathology.</p>
+    </div>
+    <div class="second">
+        <div><img src="https://tse4.mm.bing.net/th?id=OIP.aPiaOQr-ArT-7qitA93SDQHaDt&pid=Api&P=0&h=180" alt=""
+                height="200" width="350">
+        </div>
+        <div><img src="https://tse2.mm.bing.net/th?id=OIP.sMy86_p-Z55WXrpLA7b-_AHaE8&pid=Api&P=0&h=180"
+                alt="" height="200" width="350">
+        </div>
+        <div><img src="https://tse3.mm.bing.net/th?id=OIP.ylvrLfK39Vmkx3t7KmR7-gHaE7&pid=Api&P=0&h=180" alt=""
+                height="200" width="350">
+        </div>
+
+    </div>
+     <div class="footer">
+        <div class="footer-container">
+            <div class="contact-info">
+                <h2>Contact us</h2>
+                <p>Online</p>
+                <p>Phone: 503-221-0161</p>
+                <hr>
+            </div>
+
+            <div class="system">
+                <div class="footer-column">
+                    <h3>Patient info</h3>
+                    <p>Doctors</p>
+                    <p>Specialties</p>
+                    <p>Patient resources</p>
+                    <p>Notice of privacy practices</p>
+                    <!-- <p>SMS Terms and Conditions</p> -->
+                    <p>Health matters</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>General clinic info</h3>
+                    <p>About us</p>
+                    <p>Careers</p>
+                    <!-- <p>The Portland Clinic Foundation</p> -->
+                    <!-- <p>100% Portland for 100 years</p> -->
+                </div>
+
+                <div class="footer-column">
+                    <h3>Partner sites</h3>
+                    <p>MyChart link</p>
+                    <p>EpicCare link</p>
+                    <p>Media resources</p>
+                </div>
+
+                <div class="footer-column">
+                    <!-- <h3>TPC staff & providers</h3> -->
+                    <p>External TPC email access</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2024 The Smart Health Care
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

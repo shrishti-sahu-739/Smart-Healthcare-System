@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: rgb(25, 17, 95);
+
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 10px 20px;
+    list-style: none;
+    padding: 2px;
+    font-size: larger;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(217, 211, 23, 0.885);
+    /* color: a; */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(168, 159, 159);
+}
+
+.line {
+    width: 33px;
+    background-color: rgba(217, 211, 23, 0.885);
+    height: 4px;
+    margin: 3px 3px;
+}
+
+div {
+    text-align: center;
+}
+
+div h {
+    margin: 20px 10px;
+    font-size: larger;
+    padding: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+option {
+    color: black;
+}
+
+div button {
+    background-color: rgba(217, 211, 23, 0.885);
+    display: inline;
+    font-size: larger;
+    border: none;
+    padding: 1ch;
+}
+
+.content {
+    margin-top: 2%;
+    background-color: rgba(217, 211, 23, 0.885);
+    padding: 20px;
+}
+
+.content h {
+    font-size: larger;
+    color: rgb(25, 17, 95);
+    font-size: x-large;
+}
+
+.content select {
+    padding: 1cap;
+}
+
+.box {
+    height: 200px;
+    width: 500;
+    padding-top: 18%;
+    animation: changeImage 50s linear infinite;
+}
+
+@keyframes changeImage {
+    0% {
+        background-image: url("img1.jpg");
+    }
+
+    25% {
+        background-image: url("img2.jpg");
+    }
+
+    50% {
+        background-image: url("img3.jpg");
+    }
+
+    75% {
+        background-image: url("img4.jpg");
+    }
+
+    100% {
+        background-image: url("img5.jpg");
+    }
+}
+
+.box h1 {
+    color: rgb(8, 8, 8);
+    font-size: xx-large;
+}
+
+.box button {
+    border: none;
+    font-size: x-large;
+}
+
+.first {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.second {
+    border: 2px;
+    height: 350px;
+    width: 500;
+    margin-top: 4%;
+    background-color: rgb(228, 222, 222);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4%;
+}
+
+.second div {
+    height: 280px;
+    width: 350px;
+    background-color: rgb(25, 17, 95);
+}
+
+.second h2 {
+    color: white;
+}
+
+.second a {
+    color: rgb(212, 215, 13);
+}
+
+.second h {
+    color: rgb(212, 215, 13);
+}
+
+/* .third {
+    border: 2px;
+    height: 800;
+    width: 500;
+    margin-top:2px;
+    background-color: rgb(25, 17, 95);
+    /* display: flex; 
+    justify-content: space-evanly; */
+/* padding-top: 4%; */
+/* } 
+.third h1 {
+    color: white;
+    padding-top: 2cap;
+ } 
+.third img {
+    padding: 2cap;
+}
+.third img:hover {
+    border: 2px solid white;
+    border-radius: 2%;
+    transform: scale(1.1);
+    border: none;
+} */
+/* .footer {
+    border: 2px;
+    height: 600px;
+    width: 500;
+    background-color: grey;
+    color: white;
+    padding-top: 2cm;
+    display: block;
+}
+
+.system {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.system div {
+    display: grid;
+    grid-column: auto;
+}
+
+
+.six {
+    padding-top: 1cm;
+} */
+
+.footer {
+    background-color: rgb(118, 117, 117);
+    /* Light gray background */
+    color: white;
+    /* Dark text */
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.contact-info p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+.contact-info hr {
+    margin: 25px 0;
+    border: none;
+    border-top: 2px solid white;
+}
+
+.system {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.footer-column {
+    min-width: 180px;
+}
+
+.footer-column h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-column p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-column p:hover {
+    color: #0f1216;
+    transform: translateX(5px);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: white;
+    border-top: 1px solid white;
+    padding-top: 15px;
+    font-style: italic;
+}

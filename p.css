@@ -1,0 +1,15 @@
+.third{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px;
+    height: 800;
+    width: 500;
+    
+}
+.wrapper{
+    padding: 2px;
+}
+.image{
+    padding: 2px;
+}
