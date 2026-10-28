@@ -32,3 +32,17 @@ This project was developed as a college project to practice web development, ser
 
 ## Author
 Developed as a B.Tech CSE college project.
+
+## Project Screenshots
+
+### Home Page
+![Home Page](Screenshots/Home.png)
+
+### Login Page
+![Login Page](Screenshots/Login.png)
+
+### Doctor
+![Doctor](Screenshots/Doctor.png)
+
+### Diet
+![Diet](Screenshots/Diet.png)
